@@ -1,6 +1,23 @@
-.hero-img{
-    height: 400px;
+.hero-img {
     width: 100%;
+    aspect-ratio: 360 / 400;
     background-image: url('../img/hero-mobile.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-img {
+        aspect-ratio: 768 / 620;
+        background-image: url('../img/hero-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-img {
+        aspect-ratio: 1440 / 620;
+        background-image: url('../img/hero-desktop.png');
+        max-height: 620px; /* evita ampliar além do tamanho real da imagem */
+    }
 }
