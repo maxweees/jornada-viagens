@@ -58,7 +58,7 @@ body {
   margin: 16px auto 32px;
 }
 
-.button{
+.button {
   height: 64px;
   width: 280px;
   color: var(--text-secondary-color);
@@ -70,6 +70,7 @@ body {
   text-decoration: none;
   line-height: 64px;
 }
+
 @media screen and (min-width: 768px) {
   .section-title {
     width: 100%;
