@@ -1,0 +1,21 @@
+/* css.global - versão corrigida */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    As regras de .main-header, .logo, .img-mobile, .img-desktop,
+    .navigation-menu, nav, .list-links e o toggle do checkbox
+    foram REMOVIDAS daqui.
+  
+    Elas viviam duplicadas em dois arquivos:
+    - aqui, usando o seletor ".main-header" (que nunca era aplicado,
+      pois o <header> no HTML não tem essa classe)
+    - em header.css, usando o seletor "header" (que é o que
+      realmente estava funcionando)
+  
+    Manter as duas cópias é o que causava o comportamento
+    inconsistente das imagens responsivas. Agora header.css é a
+    única fonte de verdade para o cabeçalho.
+  */
