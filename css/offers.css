@@ -12,7 +12,8 @@
 .card {
   color: var(--text-secondary-color);
   padding: 24px 16px;
-  width: 312px;
+  width: 100%;
+  max-width: 312px;
   height: 288px;
   box-sizing: border-box;
   border-radius: 16px;
