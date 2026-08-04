@@ -1,6 +1,5 @@
 .categories-cards {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -8,20 +7,22 @@
 }
 
 .categories-cards .card {
-  width: 100%x;
-  max-width: 312px;
-  height: 210px;
+  width: 312px;
+  height: 220px;
   background-color: var(--background-secondary-color);
   text-align: center;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 24px;
   box-sizing: border-box;
   text-decoration: none;
   color: var(--text-primary-color);
 }
 
-.categories-cards .card .single-line .transfer img{
-  margin: 10px 0 20px 0;
+.categories-cards .card.single-line {
+  padding-top: 50px;
+}
+.categories-cards .card.single-line.transfer img {
+  margin: 10px 0 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -34,6 +35,7 @@
     justify-content: center;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .categories-cards .card {
     width: 430px;
