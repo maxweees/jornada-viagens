@@ -29,10 +29,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-img {
-    aspect-ratio: 1440 / 620;
+  
+  .hero .hero-img {
+    
     background-image: url("../img/hero-desktop.png");
-    max-height: 620px;
+    background-size: cover;
+    
   }
 
   .hero h2 {
