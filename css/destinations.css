@@ -54,7 +54,16 @@
     width: 900px;
   }
 
-  .destinations .item .img-item {
+  .destination-items {
+    flex-direction: row;
+    gap: 24px; 
+  }
+
+  .destinations .item {
+    flex: 1;
+  }
+
+  .destinations.item .img-item {
     width: 100%;
     height: 452px;
   }
@@ -63,7 +72,5 @@
   .destinations {
     width: 1200px;
   }
-  .destination-items {
-    flex-direction: row;
-  }
+  
 }
