@@ -1,0 +1,56 @@
+.payments .image-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.payments .content-container .image-content .image.bag {
+  background: url(../img/montagem1.png) no-repeat center;
+  background-size: cover;
+}
+
+.payments .content-container .image-content .image.passport {
+  background: url(../img/Montagem2.png) no-repeat center;
+  background-size: cover;
+}
+
+.payments .content-container .image-content .image.peaple {
+  background: url(../img/Montagem3.png) no-repeat center;
+  background-size: cover;
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .payments .content-container .image-content .image.bag {
+    background: url(../img/Montagem-tablet-1.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-content .image.passport {
+    background: url(../img/Montagem-tablet-2.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-content .image.peaple {
+    background: url(../img/Montagem-tablet-3.png) no-repeat center;
+    background-size: cover;
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+    .payments .content-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .payments .content-container .text-content {
+      width: 360px;
+    }
+    .payments .content-container .image-gallery {
+      width: 790px;
+      margin: 0;
+    }
+  }
